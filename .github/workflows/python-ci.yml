@@ -36,7 +36,7 @@ jobs:
         run: python script.py
 
       - name: Run tests and save log
-        run: pytest test_eg.py --result-log=result.log
+        run: pytest test_eg.py > result.log
 
       - name: Upload test log
         uses: actions/upload-artifact@v4
